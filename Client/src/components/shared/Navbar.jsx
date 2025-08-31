@@ -46,10 +46,10 @@ const Navbar = () => {
         <div className='bg-white overflow-hidden'>
             <div className='flex items-center justify-between mx-auto h-16 max-sm:px-3 sm:px-[5%] lg:px-[10%]'>
                 <div onClick={() => navigate("/")} className='cursor-pointer'>
-                    <h1 className='max-sm:text-lg text-2xl font-bold'>Job <span className='text-[#F83002]'>Portal</span> </h1>
+                    <h1 className='max-sm:text-lg text-2xl font-bold text-black '>Job <span className='text-[#F83002]'>Finder</span> </h1>
                 </div>
                 <div className='flex items-center gap-12 max-sm:gap-5'>
-                    <ul className='flex font-medium items-center gap-5 max-sm:hidden'>
+                    <ul className='flex font-medium items-center gap-5 max-sm:hidden text-blue-500 hover:text-blue-700'>
                         {
                             user && user.role === "recruiter"
                                 ?

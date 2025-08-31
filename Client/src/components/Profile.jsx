@@ -47,8 +47,8 @@ function Profile() {
 
 
                             <div>
-                                <h1 className='font-bold text-xl max-sm:text-lg'>{user?.fullname}</h1>
-                                <p className='max-sm:text-sm text-muted-foreground'>{user?.profile?.bio}</p>
+                                <h1 className='font-bold text-black text-xl max-sm:text-lg'>{user?.fullname}</h1>
+                                <p className='max-sm:text-sm text-black text-muted-foreground'>{user?.profile?.bio}</p>
                             </div>
 
                         </div>
@@ -57,7 +57,7 @@ function Profile() {
                         </Button>
                     </div>
 
-                    <div className='my-5'>
+                    <div className='my-5 text-black'>
                         <div className='flex items-center gap-3 my-2'>
                             <Mail />
                             <span>{user?.email}</span>

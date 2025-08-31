@@ -13,15 +13,15 @@ const AppliedJobTable = () => {
     return (
         <div>
             <Table>
-                <TableCaption>
+                <TableCaption className="text-black">
                     A list of your applied jobs
                 </TableCaption>
                 <TableHeader>
-                    <TableRow>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Job Role</TableHead>
-                        <TableHead>Company</TableHead>
-                        <TableHead className="text-right">Status</TableHead>
+                    <TableRow >
+                        <TableHead className="text-blue-500 hover:text-blue-700">Date</TableHead>
+                        <TableHead className="text-blue-500 hover:text-blue-700">Job Role</TableHead>
+                        <TableHead className="text-blue-500 hover:text-blue-700">Company</TableHead>
+                        <TableHead className="text-right text-blue-500 hover:text-blue-700">Status</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -32,9 +32,9 @@ const AppliedJobTable = () => {
                     {
                         allAppliedJobs.length >= 0 && allAppliedJobs?.map((item, index) => (
                             <TableRow key={index}>
-                                <TableCell>{item?.createdAt.split("T")[0]}</TableCell>
-                                <TableCell>{item?.job?.title}</TableCell>
-                                <TableCell>{item?.job?.company?.companyName}</TableCell>
+                                <TableCell className="text-black">{item?.createdAt.split("T")[0]}</TableCell>
+                                <TableCell className="text-black">{item?.job?.title}</TableCell>
+                                <TableCell className="text-black">{item?.job?.company?.companyName}</TableCell>
                                 <TableCell className="text-right"><Badge className={`${item.status === "rejected" ? 'bg-red-400' : item.status === "pending" ? 'bg-gray-400' : 'bg-green-400'}`}>{item?.status.toUpperCase()}</Badge></TableCell>
                             </TableRow>
                         ))

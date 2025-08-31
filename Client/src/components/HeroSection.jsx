@@ -43,7 +43,7 @@ function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.8 }}
-                    className='px-3 text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium harum officiis id at impedit.</motion.p>
+                    className='px-3 text-white'>Apply for your Dream jobs</motion.p>
                 <div className='flex sm:w-[40%] shadow-lg border border-gray-200 pl-3 rounded-full items-center gap-4 mx-auto'>
                     <input type="text"
                         placeholder='Find your dream jobs'
