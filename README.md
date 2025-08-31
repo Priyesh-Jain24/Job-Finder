@@ -27,14 +27,21 @@ Real-time application status (pending, accepted, rejected)
 🛠️ Tech Stack
 
 Frontend:
+
 React.js
+
 React Router
+
 Tailwind CSS
+
 ShadCN UI Components
 
 Backend:
+
 Node.js
+
 Express.js
+
 MongoDB (Mongoose ODM)
 
 Other Tools:
@@ -69,3 +76,4 @@ npm run dev
 
 ### Recruiter
 ![Recruiter](./assets/image.png)
+
